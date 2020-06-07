@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Fancystacks/Node-BTC-Miner#readme",
   "dependencies": {
     "commander": "^5.1.0",
+    "configstore": "^5.0.1",
     "inquirer": "^7.1.0"
   }
 }
