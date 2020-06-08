@@ -1,5 +1,7 @@
 const check = {
-    price() {
-        console.log('check price');
+    price(cmd) {
+        console.log(cmd.coin, cmd.curr);
     }
-}
+};
+
+module.exports = check;
