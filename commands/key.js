@@ -21,10 +21,26 @@ const key = {
         }
     },
     show() {
-        console.log('set show');
+        try {
+            const keyAdmin = new KeyAdmin();
+            const key = keyAdmin.getKey();
+            console.log(`Current API Key: ${key.yellow}`);
+
+            return key;
+        } catch (error) {
+            console.error(error.message.red);
+        }
     },
     remove() {
-        console.log('set remove');
+        try {
+            const keyAdmin = new KeyAdmin();
+            keyAdmin.deleteKey();
+            console.log('API Key has been deleted.'.blue);
+
+            return key;
+        } catch (error) {
+            console.error(error.message.red);
+        }
     }
 }
 
