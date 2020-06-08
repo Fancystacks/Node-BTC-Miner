@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const colors = require('colors');
+const { isRequired } = require('../utils/validation');
 const KeyAdmin = require('../lib/KeyAdmin');
 
 const key = {
@@ -10,7 +11,7 @@ const key = {
                 type: 'input',
                 name: 'key',
                 message: 'Enter Nomics API Key '.blue + 'https://nomics.com',
-                // validate: isRequired
+                validate: isRequired
             }
         ]);
 
