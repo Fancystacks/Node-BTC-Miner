@@ -1,25 +1,8 @@
-
-const program = require('commander');
-const key = require('../commands/key');
+const program = require("commander");
 
 program
-  .command('set')
-  .description('Set API Key -- Get at https://nomics.com')
-  .action(key.set);
-
-program
-  .command('show')
-  .description('Show API Key')
-  .action(key.show);
-
-program
-  .command('remove')
-  .description('Remove API Key')
-  .action(key.remove);
+    .command('set')
+    .description('Set API Key -- Get at https://nomics.com')
+    .action(() => console.log('fuck'));
 
 program.parse(process.argv);
-
-// If no args, output help
-if (!process.argv[2]) {
-  program.outputHelp();
-}

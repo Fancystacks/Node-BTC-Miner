@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 const program = require('commander');
-const pkg = require('../package.json');
+const package = require('../package.json');
 
 program
-  .version(pkg.version)
-  .command('key', 'Manage API Key -- https://nomics.com')
-  .command('check', 'Check Coin Price Info')
+  .version(package.version)
+  .command('key', 'API Key info -- https://nomics.com')
+  .command('check', 'View current value')
   .parse(process.argv);
