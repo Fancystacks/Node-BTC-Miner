@@ -2,7 +2,7 @@
   "name": "Node-BTC-Miner",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "coindesk.js",
   "bin": "./bin/coindesk.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
