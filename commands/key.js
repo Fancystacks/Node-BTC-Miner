@@ -9,13 +9,14 @@ const key = {
             {
                 type: 'input',
                 name: 'key',
-                message: 'Enter Nomics API Key '.blue + 'https://nomics.com'
+                message: 'Enter Nomics API Key '.blue + 'https://nomics.com',
+                // validate: isRequired
             }
         ]);
 
         const key = keyAdmin.setKey(input.key);
         if (key) {
-            console.log('API key added.');
+            console.log('API key added.'.green);
         }
     },
     show() {
