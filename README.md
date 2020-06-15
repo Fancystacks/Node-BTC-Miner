@@ -27,5 +27,5 @@
 
 ![btc-miner](https://user-images.githubusercontent.com/38336934/84620024-1477a680-ae94-11ea-85bf-d230b248cfae.gif)
 
-- `coindesk check price curr=EUR` -- Euros
-- `coindesk check price curr=USD` -- US dollars
+- `coindesk check price --curr=EUR` --- Euros
+- `coindesk check price --curr=USD` --- US dollars
